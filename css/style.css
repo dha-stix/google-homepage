@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+/* NAV STYLING */
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 100;
+    padding: 10px;
+}
+nav > * {
+    margin-right: 10px;
+}
+nav  a {
+    color: #000;
+}
+nav button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+nav button:hover {
+    padding: 5px;
+    background-color: #f2f0f1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-braille {
+    font-size: 18px;
+}
+#avatar {
+    width: 30px;
+    height: 30px;
+}
+/* END OF NAV STYLING */
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+main > * {
+    margin-bottom: 15px;
+}
+.logo {
+    height: 70px;
+}
+.input__section {
+    height: 40px;
+    display: flex;
+    position: relative;
+    width: 40%;
+}
+#voice {
+    position: absolute;
+    height: 50%;
+    right: 30px;
+    top: 10px;
+}
+.fa-search {
+    position: absolute;
+    height: 50%;
+    font-size: 16px;
+    left: 20px;
+    top: 12px;
+    color: rgb(212, 212, 212);
+}
+input {
+   width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 1px solid rgb(212, 212, 212);
+    outline: none;
+    padding: 5px 50px;
+}
+input:hover {
+    box-shadow:  0px 1px 2px 2px rgb(212, 212, 212);
+}
+
+.btns > button {
+    margin-right: 15px;
+    padding: 7px;
+    border: none;
+    background-color: #f2f0f1;
+    cursor: pointer;
+}
+.btns > button:hover {
+    border: 1px solid rgb(212, 212, 212);
+}
+span {
+    margin-right: 5px;
+}
+
+
+/* FOOTER SECTION */
+footer {
+    min-height: 15vh;
+    width: 100%;
+    background-color: #f2f0f1; 
+}
+.footer__items {
+    font-size: 16px;
+    color: rgb(104, 101, 101);
+}
+footer > div {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 15px;
+}
+.endnote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.end__items > * {
+    margin-right: 5px;
+    color: rgb(104, 101, 101);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width : 768px) {
+    .input__section {
+        width: 80%;
+    }
+    .endnote {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .end__items {
+        height: 5vh;
+    }
+}
